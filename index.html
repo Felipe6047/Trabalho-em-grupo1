@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de agendamento</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de agendamento</h1>
+    </header>
+    <main>
+      <section class="Agendamento" id="Agendamento">
+        <h2>Informações para contato</h2>
+
+        <form class="form-Agendamento" id="form-Agendamento">
+          <label for="Nome">Nome:</label>
+          <input type="Text" id="Nome" name="Nome" required />
+
+          <label for="Sobrenome">Sobrenome:</label>
+          <input type="Text" id="Sobrenome" name="Sobrenome" required />
+
+          <label for="Telefone">Telefone:</label>
+          <input type="Tel" id="Telefone" name="Telefone" required />
+
+          <label for="e-mail">E-mail:</label>
+          <input type="e-mail" id="e-mail" name="e-mail" required />
+
+        </form>
+      </section>
+    </main>
+
+    <section class="lista-agendamentos" id="lista-agendamentos">
+      <h2>Agendamento</h2>
+      <ul id="agendamentos"></ul>
+    </section>
+    
+<div class="Observacoes" id="Observacoes">
+    <label for="Nome">Observações:</label>
+  <input type="Text" id="Observacoes" name="Observacoes" required />
+</div>
+
+    <div class="butao" id="butao">
+          <button type="submit">Enviar</button>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>

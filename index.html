@@ -1,49 +1,63 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sistema de agendamento</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Formulário de agendamento</h1>
-    </header>
-    <main>
-      <section class="Agendamento" id="Agendamento">
-        <h2>Informações para contato</h2>
 
-        <form class="form-Agendamento" id="form-Agendamento">
-          <label for="Nome">Nome:</label>
-          <input type="Text" id="Nome" name="Nome" required />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de agendamento</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-          <label for="Sobrenome">Sobrenome:</label>
-          <input type="Text" id="Sobrenome" name="Sobrenome" required />
+<body>
+  <header>
+    <div class="Adm" id="Adm">
+      <button>Gerenciamento</button>
+    </div>
+    <div class="Home" id="Home">
+      <button>Início</button>
+    </div>
+    <h1>Formulário de agendamento</h1>
+  </header>
+  <main>
+    <section class="Agendamento" id="Agendamento">
+      <h2>Informações para contato</h2>
 
-          <label for="Telefone">Telefone:</label>
-          <input type="Tel" id="Telefone" name="Telefone" required />
+      <form class="form-Agendamento" id="form-Agendamento">
+        <label for="Nome">Nome:</label>
+        <input type="Text" id="Nome" name="Nome" required />
 
-          <label for="e-mail">E-mail:</label>
-          <input type="e-mail" id="e-mail" name="e-mail" required />
+        <label for="Sobrenome">Sobrenome:</label>
+        <input type="Text" id="Sobrenome" name="Sobrenome" required />
 
-        </form>
-      </section>
-    </main>
+        <label for="Telefone">Telefone:</label>
+        <input type="Tel" id="Telefone" name="Telefone" required />
 
+        <label for="e-mail">E-mail:</label>
+        <input type="e-mail" id="e-mail" name="e-mail" required />
+
+      </form>
+    </section>
     <section class="lista-agendamentos" id="lista-agendamentos">
       <h2>Agendamento</h2>
       <ul id="agendamentos"></ul>
     </section>
-    
-<div class="Observacoes" id="Observacoes">
-    <label for="Nome">Observações:</label>
-  <input type="Text" id="Observacoes" name="Observacoes" required />
-</div>
 
-    <div class="butao" id="butao">
-          <button type="submit">Enviar</button>
-      </div>
-    <script src="script.js"></script>
-  </body>
+    <label>Data</label>
+    <input type="date" id="data" required>
+
+    <label>Horário</label>
+    <input type="time" id="hora" required>
+    </form>
+
+    <div class="Observacoes" id="Observacoes">
+      <label for="Nome">Observações:</label>
+      <input type="Text" id="Observacoes" name="Observacoes" required />
+    </div>
+    <div class="button" id="btn-enviar">
+      <button type="submit">Enviar</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>

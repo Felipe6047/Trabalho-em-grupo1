@@ -1,7 +1,3 @@
-function areahome() {
-    window.location.href = "../home/index.html";
-}
-
 function areaAdm() {
     window.location.href = "../adm/index.html";
 }

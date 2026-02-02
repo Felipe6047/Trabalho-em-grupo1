@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -10,23 +10,25 @@
 
 <body>
   <header>
-    </div>
-    <div class="Inicio" id="Home">
-      <button>Início</button>
-    </div>
     <div class="main" id="raiz">
-      <button>Agendamento</button>
+      <button><Nav>
+        <a href="/agendamento/index.html">Agendamento</a>
+      </Nav></button>
     </div>
-    <h1>Paine0l do Administrador</h1>
+    <h1>Painel do Administrador</h1>
   </header>
   <main>
-    <table>
       <thead>
+        <table>
         <tr>
-          <th>Nome</th>
-          <th>Telefone</th>
-          <th>Data</th>
-          <th>Hora</th>
+          <td>Nome</td>
+          <td>Telefone</td>
         </tr>
+        <tr>
+          <td>Data</td>
+          <td>Hora</td>
+        </tr>
+        </table>
       </thead>
+    </main>
       <tbody id="listaAgendamentos"></tbody>

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  text-align: left;
+  margin-top: 300px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#img {
+  width: 90px;
+}
+
+.imgMulher {
+    display: flex;
+      justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  width: 35%;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+nav {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  inset: 0 0 auto 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  font-size: 18px;
+  color: black;
+}
+
+.link a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+#agenda {
+  margin-bottom: 20px;
+  transform: translateY(50%);
+}
+
+.cor {
+  color: orange;
+}
+
+body {
+  background-color: aliceblue;
+  font-family:
+    Playfair Display,
+    sans-serif;
+}
+
+.titulo {
+  font-size: 18px;
+  padding: 0px 0px 0px 20px;
+}
+
+.contato {
+  padding: 0px 0px 0px 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 15px;
+}
+
+#nome {
+  padding: 25px 15px 15px 20px;
+}
+
+#contato {
+  padding: 10px 15px 15px 20px;
+}
+
+#botoes {
+  padding: 20px 15px 15px 20px;
+}
+
+#enviar {
+  padding: 10px;
+}
+
+#limpar {
+  padding: 10px;
+}
+

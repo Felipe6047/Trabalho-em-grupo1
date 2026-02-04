@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -13,24 +12,32 @@
   justify-content: space-between;
   align-items: center;
   width: 35%;
-  text-align: left;
-  margin-top: 300px;
+  text-align: center;
+  margin-top: 350px;
+  font-size: 30px;
+
+  p{
+    font-size: 26px;
+  }
 }
 
 p {
   font-size: 18px;
 }
 
+
 #img {
   width: 90px;
 }
 
 .imgMulher {
-    display: flex;
-      justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 300px;
   width: 35%;
+  transform: translateX(10%)
+
 }
 
 #home {
@@ -39,6 +46,15 @@ p {
     align-items: center;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: -5%;
+}
+
+#agenda {
+    transform: translateY(50%);
+    inset: 0 0 auto 0;
+    display: grid;
+    place-items: center;
+    /* height: 100vh; */
 }
 
 nav {
@@ -46,7 +62,7 @@ nav {
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
   z-index: 100;
   inset: 0 0 auto 0;
@@ -54,7 +70,7 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 3rem;
+  gap: 200px;
   font-size: 18px;
   color: black;
 }
@@ -63,12 +79,9 @@ nav {
   text-decoration: none;
   position: relative;
   padding-bottom: 0.5rem;
+  color: black;
 }
 
-#agenda {
-  margin-bottom: 20px;
-  transform: translateY(50%);
-}
 
 .cor {
   color: orange;
@@ -76,18 +89,18 @@ nav {
 
 body {
   background-color: aliceblue;
-  font-family:
-    Playfair Display,
+  font-family: Quicksand,
     sans-serif;
 }
 
 .titulo {
   font-size: 18px;
-  padding: 0px 0px 0px 20px;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .contato {
-  padding: 0px 0px 0px 20px;
+
 }
 
 input {

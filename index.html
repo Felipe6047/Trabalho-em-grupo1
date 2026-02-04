@@ -20,14 +20,14 @@
         </ul>
     </nav>
 
-
+ 
     <div id="home">
         <section class="txt">
             <h3>
                 Agende em <strong class="cor">poucos cliques</strong>, sem complicação.
             </h3>
-            <p>
-                Organize seus horários de forma<br> rápida, prática e segura. Com nosso<br> sistema de agendamentos, você <br><strong class="cor"> economiza tempo </strong>, evita conflitos de<br> agenda e garante mais controle<br> sobre seus compromissos. Tudo<br> online, simples e do jeito que você<br> precisa.
+            <p class="home">
+                Organize seus horários de forma<br> rápida, prática e segura. Com nosso<br> sistema de agendamentos, você <br><strong class="cor"> economiza tempo </strong>, evita conflitos de <br> agenda e garante mais controle<br> sobre seus compromissos. Tudo<br> online, simples e do jeito que você<br> precisa.
             </p>
         </section>
         <div class="imgMulher">
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    
+
     <div id="agenda">
     <section class="titulo">
         <h2> Formulário de Agendamento</h2>
@@ -57,12 +57,29 @@
         <p><label for="iemail">Email</label></p>
         <input type="email" placeholder="email@gmail.com"  name="email"  id="iemail" autocomplete="email" required>
         </p>
+        <br>
+        <p>
+        <p><label>Data</label></p>
+        <input type="date" value="" id="" />      
+        </p>
+        <br>
+        <p>
+        <p><label>Hora</label></p>
+        <input
+        type="time"
+        id="appointment"
+        name="appointment"
+        min="09:00"
+        max="18:00"
+        required />
+        </p>
 
+    </section>
 
-        <p id="botoes">
+    <section class="inputs">
+       <p id="botoes">
             <input type="submit" id="enviar" value="Enviar">
             <input type="reset" id= "limpar" value="Limpar">
-        
         </p>
     </section>
 </div>

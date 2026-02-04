@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
 
 .txt {
@@ -28,6 +29,8 @@ p {
 
 #img {
   width: 90px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .imgMulher {
@@ -36,8 +39,7 @@ p {
   align-items: center;
   margin-top: 300px;
   width: 35%;
-  transform: translateX(10%)
-
+  transform: translateX(10%);
 }
 
 #home {
@@ -46,15 +48,15 @@ p {
     align-items: center;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: -5%;
+    gap: 5%;
 }
 
 #agenda {
-    transform: translateY(50%);
+    transform: translateY(100vh);
     inset: 0 0 auto 0;
     display: grid;
     place-items: center;
-    /* height: 100vh; */
+    margin-bottom: 50px;
 }
 
 nav {
@@ -72,14 +74,14 @@ nav {
   display: flex;
   gap: 200px;
   font-size: 18px;
-  color: black;
+  color: rgb(255, 245, 245);
 }
 
 .link a {
   text-decoration: none;
   position: relative;
   padding-bottom: 0.5rem;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -88,7 +90,7 @@ nav {
 }
 
 body {
-  background-color: aliceblue;
+  background-image: linear-gradient(to top right, #213a58, #58849e);
   font-family: Quicksand,
     sans-serif;
 }
@@ -97,15 +99,32 @@ body {
   font-size: 18px;
   padding: 0;
   margin-bottom: 0;
+  text-align: center;
+  margin-top: 20px;
+  color:  rgb(255, 255, 255);
+  
 }
 
 .contato {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: auto;
+  border-radius:15px;
+  background-color: #527d96;
+  width: 27%;
+  height: auto;
 }
 
 input {
   padding: 10px;
   font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  width: 60%;
+  margin-bottom: 15px;
 }
 
 #nome {
@@ -118,13 +137,24 @@ input {
 
 #botoes {
   padding: 20px 15px 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 #enviar {
-  padding: 10px;
+  border-radius: 5px;
+  background-color: #599d9c;
+  color: white;
+  font-size: 15px;
+  margin-right: 10px;
 }
 
 #limpar {
-  padding: 10px;
+  border-radius: 5px;
+  background-color: #599d9c;
+  color: white;
+  font-size: 15px;
+  margin-left: 10px;  
 }
-

@@ -1,4 +1,19 @@
+.
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+/*tablet*/
+@media (min-width: 768px){
+  .txt {
+    width: 50%;
+    font-size: 40px;
+  }
+
+  .imgMulher {
+    width: 50%;
+    transform: translateX(20%);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;

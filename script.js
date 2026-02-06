@@ -3,6 +3,11 @@
 const form = document.getElementById("contatos");
 const lista = document.getElementById("agendamentos");
 
+document.addEventListener('DOMContentLoaded', function() {
+  listarAgendamento();
+});
+
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -22,7 +27,6 @@ const agendamento ={
     lista.appendChild(li);
     salvaragendamento(agendamento);
     form.reset();
-alert ("joinha")
 
 });
 
@@ -36,11 +40,14 @@ function listarAgendamento() {
   const Agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
 
 
-  Agendamentos.forEach((item, index) => {
-    console.log(`agendamento ${index + 1}`);
-    console.log(item.nome, item.sobrenome);
-    console.log(item.email);
-    console.log(item.telefone);
-    console.log(item.data, item.hora);
-  });
+ 
+    Agendamentos.forEach(element => {
+      const li = document.createElement('li');
+      li.innerHTML = 
+      `<p> ${element.nome}  ${element.sobrenome}</p>
+      <p>${element.data} as ${element.hora}</p>`;
+
+      lista.appendChild(li);
+    });
+
 }

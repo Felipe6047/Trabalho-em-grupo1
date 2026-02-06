@@ -184,4 +184,10 @@ button:hover {
   background-color: orange;
   cursor: pointer;
 }
+
+#lg {
+  background-color: #599d9c;
+  padding: 10px;
+  border-radius: 5px;
+}
 }

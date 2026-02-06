@@ -1,33 +1,46 @@
-alert("Sua privacidade é nossa prioridade. Adotamos procedimentos rigorosos de segurança para proteger seus dados contra acessos não autorizados.");
-
-const form = document.getElementById
 
 
+const form = document.getElementById("contatos");
+const lista = document.getElementById("agendamentos");
 
-// window.onload = Informaçõesparacontato;
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-// function enviar() {('enviar').value;
-// }
+const agendamento ={
+   nome: document.getElementById("name").value,
+   sobrenome: document.getElementById("sobrenome").value,
+   email: document.getElementById("iemail").value,
+   telefone: document.getElementById("itel").value,
+   data: document.getElementById("date").value,
+   hora: document.getElementById("appointment").value
+};
+  const li = document.createElement('li');
+    li.innerHTML = 
+    `<p> ${agendamento.nome}  ${agendamento.sobrenome}</p>
+     <p>${agendamento.data} as ${agendamento.hora}</p>`;
 
-// function enviarDados() {
-  
-//   const input = document.getElementById('').value;
-//   const numero = parseInt(input);
+    lista.appendChild(li);
+    salvaragendamento(agendamento);
+    form.reset();
+alert ("joinha")
 
-//   function carregarDados() {
-//     const element = document.getElementById('...');
-//     const dados = localStorage.getItem('...');
+});
+
+function salvaragendamento(agendamento) {
+  const Agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
+  Agendamentos.push(agendamento);
+  localStorage.setItem("agendamentos", JSON.stringify(Agendamentos));
+}
+
+function listarAgendamento() {
+  const Agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
 
 
-//     if (dados) {
-//       const primos = JSON.parse(dados);
-//       element.innerHTML = dados;
-
-//     }
-//   }
-// }
-// function limpar() {
-//   localStorage.clear();
-//   document.getElementById('...').innerHTML = '';
-//   document.getElementById('...').value = '';
-// }
+  Agendamentos.forEach((item, index) => {
+    console.log(`agendamento ${index + 1}`);
+    console.log(item.nome, item.sobrenome);
+    console.log(item.email);
+    console.log(item.telefone);
+    console.log(item.data, item.hora);
+  });
+}

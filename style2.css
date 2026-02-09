@@ -16,6 +16,11 @@ body {
     box-shadow: 0 4px 10px rgba(47, 154, 187, 0.904); 
     display: grid;
     gap: 16px;
+
+    #seta {
+        cursor: pointer;
+        padding: 0px;
+    }
 }
 
 form{
@@ -26,6 +31,7 @@ form{
 h2{
     color: orange;
     text-align: center;
+    padding: 0px 5px 5px 5px;
 }
 
 .login-box form input{
@@ -68,3 +74,4 @@ a:houver{
   'GRAD' 0,
   'opsz' 24
 }
+

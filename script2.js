@@ -1,5 +1,5 @@
 const forms = document.getElementById('adiministrador');
-const emailAdm = "admin@123"
+const emailAdm = "admin123@gmail.com"
 const senhaAdm = "admin@123"
 
 forms.addEventListener('submit', function(event) {

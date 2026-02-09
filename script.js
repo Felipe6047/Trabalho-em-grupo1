@@ -47,9 +47,10 @@ function listarAgendamento() {
     Agendamentos.forEach(element => {
       const li = document.createElement('li');
       li.innerHTML = 
-      `<p> Nome: ${element.nome}  ${element.sobrenome}</p>
-      <p> Email:${element.email}  Numero de Telefone${element.telefone}</p>
-      Data:<p>${element.data} as ${element.hora}</p>`;
+      `<strong><p> Nome: </strong> ${element.nome}  ${element.sobrenome}</p>
+      <strong><p> Email: </strong>${element.email} </p>
+      <p><strong> Numero: </strong>${element.telefone}</p>
+      <strong><p>  Data: </strong>${element.data} as ${element.hora}</p> <br>`;
 
       lista.appendChild(li);
     });
@@ -57,5 +58,13 @@ function listarAgendamento() {
 }
 //  ideias
 //  `<strong><p> Nome: ${element.nome}  ${element.sobrenome}</p></strong>
-// <strong><p> Email: ${element.email} </p></strong> <p><strong> Numero: ${element.telefone}</p></strong>
+// <strong><p> Email: ${element.email} </p></strong> 
+// <p><strong> Numero: ${element.telefone}</p></strong>
 // <strong><p>  Data: ${element.data} as ${element.hora}</p></strong>`;
+
+
+// `<p> Nome: ${element.nome}  ${element.sobrenome}</p>
+//        <p> Email: ${element.email} </p>
+//        <p> Numero de Telefone: ${element.telefone}</p>
+//        <p> Data: ${element.data} </p>
+//        <p> Hora: ${element.hora}</p>`;

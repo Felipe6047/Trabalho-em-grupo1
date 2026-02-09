@@ -1,27 +1,24 @@
-
-
 const form = document.getElementById("contatos");
 const lista = document.getElementById("agendamentos");
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   listarAgendamento();
 });
 
+if (form) {
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-const agendamento ={
-  nome: document.getElementById("name").value,
-   sobrenome: document.getElementById("sobrenome").value,
-   email: document.getElementById("iemail").value,
-   telefone: document.getElementById("itel").value,
-   data: document.getElementById("date").value,
-   hora: document.getElementById("appointment").value
-};
-  const li = document.createElement('li');
-    li.innerHTML = 
-    `<p> ${agendamento.nome}  ${agendamento.sobrenome}</p>
+    const agendamento = {
+      nome: document.getElementById("name").value,
+      sobrenome: document.getElementById("sobrenome").value,
+      email: document.getElementById("iemail").value,
+      telefone: document.getElementById("itel").value,
+      data: document.getElementById("date").value,
+      hora: document.getElementById("appointment").value,
+    };
+    const li = document.createElement("li");
+    li.innerHTML = `<p> ${agendamento.nome}  ${agendamento.sobrenome}</p>
     <p> ${agendamento.email}  ${agendamento.telefone}</p>
      <p>${agendamento.data} as ${agendamento.hora}</p>`;
 
@@ -30,8 +27,8 @@ const agendamento ={
     form.reset();
 
     alert("Agendamento realizado com sucesso");
-
-});
+  });
+}
 
 function salvaragendamento(agendamento) {
   const Agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
@@ -42,26 +39,17 @@ function salvaragendamento(agendamento) {
 function listarAgendamento() {
   const Agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
 
+  Agendamentos.forEach((element) => {
+    const li = document.createElement("li");
 
- 
-    Agendamentos.forEach(element => {
-      const li = document.createElement('li');
-      li.innerHTML = 
-      `<strong><p> Nome: </strong> ${element.nome}  ${element.sobrenome}</p>
-      <strong><p> Email: </strong>${element.email} </p>
-      <p><strong> Numero: </strong>${element.telefone}</p>
-      <strong><p>  Data: </strong>${element.data} as ${element.hora}</p> <br>`;
-
-      lista.appendChild(li);
-    });
-
+    lista.appendChild(li);
+  });
 }
 //  ideias
 //  `<strong><p> Nome: ${element.nome}  ${element.sobrenome}</p></strong>
-// <strong><p> Email: ${element.email} </p></strong> 
+// <strong><p> Email: ${element.email} </p></strong>
 // <p><strong> Numero: ${element.telefone}</p></strong>
 // <strong><p>  Data: ${element.data} as ${element.hora}</p></strong>`;
-
 
 // `<p> Nome: ${element.nome}  ${element.sobrenome}</p>
 //        <p> Email: ${element.email} </p>

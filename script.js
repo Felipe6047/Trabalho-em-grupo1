@@ -73,3 +73,16 @@ function listarAgendamento() {
 //        <p> Numero de Telefone: ${element.telefone}</p>
 //        <p> Data: ${element.data} </p>
 //        <p> Hora: ${element.hora}</p>`;
+
+
+
+// <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+//         <menu id="itens">
+//         <ul class="nav-links">
+//             <li class="link"><a href="#home">Início</a></li>
+//             <li class="link"><a href="#agenda">Agendamentos</a></li>
+//             <li class="link"><a id="lg" href="index2.html">Login</a></li>
+            
+//         </ul>
+//         </menu>
+//     </nav>
